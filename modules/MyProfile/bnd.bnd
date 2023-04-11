@@ -1,0 +1,4 @@
+Bundle-Name: MyProfile
+Bundle-SymbolicName: com.liferay.myprofile.web
+Bundle-Version: 1.0.0
+Export-Package: com.liferay.myprofile.web.constants

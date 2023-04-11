@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.liferay.testing.service.model.KycDetails">
+		<field name="uuid" type="String" />
+		<field name="kycDetailId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="address" type="String" />
+		<field name="panNumber" type="String" />
+		<field name="gstnNumber" type="String" />
+		<field name="typeOfBusiness" type="String" />
+		<field name="addressProofId" type="long" />
+		<field name="panProofId" type="long" />
+		<field name="gstnProofId" type="long" />
+		<field name="typeOfBusinessId" type="long" />
+	</model>
+</model-hints>
