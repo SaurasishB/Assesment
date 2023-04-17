@@ -64,12 +64,6 @@ public class myprofilePortlet extends MVCPortlet {
 	public void render(RenderRequest renderRequest, RenderResponse renderResponse) throws IOException, PortletException{
 		try{ThemeDisplay themeDisplay = (ThemeDisplay) renderRequest.getAttribute(WebKeys.THEME_DISPLAY);
 		long userId = themeDisplay.getUserId();
-//		long kycDetailIds = CounterLocalServiceUtil.increment(KycDetails.class.getName());
-//		KycDetails kycDetail = KycDetailsLocalServiceUtil.createKycDetails(kycDetailIds);
-//		kycDetail.setUserId(kycDetailIds);
-//		kycDetail.setUserName("testing");
-//		kycDetail.setCreateDate(new Date());
-//		KycDetailsLocalServiceUtil.addKycDetails(kycDetail);
 		
 		
 		List<KycDetails> kycDetailId = KycDetailsLocalServiceUtil.findByUserId(userId);

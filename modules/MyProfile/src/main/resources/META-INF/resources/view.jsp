@@ -1,6 +1,5 @@
 <%@ include file="/init.jsp"%>
 
-<%@ include file="/init.jsp"%>
 <%
 	List<Phone> phoneList = user.getPhones();
 	long phoneId = 0L;
