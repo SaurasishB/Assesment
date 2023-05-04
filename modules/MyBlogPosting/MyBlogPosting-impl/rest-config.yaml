@@ -1,0 +1,9 @@
+apiDir: "../MyBlogPosting-api/src/main/java"
+apiPackagePath: "com.liferay.headless.myBlogPosting"
+application:
+    baseURI: "/MyBlogPosting"
+    className: "MyBlogPostingApplication"
+    name: "MyBlogPosting"
+author: "me"
+clientDir: "../MyBlogPosting-client/src/main/java"
+testDir: "../MyBlogPosting-test/src/testIntegration/java"

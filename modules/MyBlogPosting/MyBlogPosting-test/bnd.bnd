@@ -1,0 +1,5 @@
+Bundle-Name: MyBlogPosting-test
+Bundle-SymbolicName: com.liferay.headless.myBlogPosting.test
+Bundle-Version: 1.0.0
+-includeresource: com.liferay.headless.myBlogPosting.client.jar=../MyBlogPosting-client/build/libs/com.liferay.headless.myBlogPosting.client-1.0.0.jar;lib:=true
+-provider-policy: ${replacestring;${range;[==,==]};.*,(.*)];$1}

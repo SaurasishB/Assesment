@@ -1,4 +1,4 @@
-<%@ include file="/init.jsp"%>
+w<%@ include file="/init.jsp"%>
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/all.min.css">
 
 <portlet:resourceURL id="/user/detail" var="userDetailUrl"></portlet:resourceURL>

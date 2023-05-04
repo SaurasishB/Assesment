@@ -1,0 +1,145 @@
+info:
+    description:
+        "MyBlogPosting REST API. A Java client JAR is available for use with the group ID 'com.liferay', artifact ID
+        'com.liferay.headless.myBlogPosting.client', and version '1.0.0'."
+    license:
+        name: "Apache 2.0"
+        url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+    title: "MyBlogPosting"
+    version: v1.0
+openapi: 3.0.1
+components:
+   schemas:
+      MyBlogPosting:
+        description: "This is the rest builder for blogs"
+        properties:
+          id:
+            description: "The blogPosting Id"
+            format: int64
+            type: integer
+          title:
+            description: "The blogPosting Name"
+            type: string
+          body:	
+            description: "The blogPosting Detail"
+            type: string
+          
+  
+
+paths:
+  "/my-blog-posting":
+    get:
+      description: "Gets a list of BlogPost"
+      operationId: getAllMyBlogPost
+      responses:
+        200:
+          description: ""
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: "#/components/schemas/MyBlogPosting"
+                type: array
+            application/xml:
+              schema:
+                items:
+                  $ref: "#/components/schemas/MyBlogPosting"
+                type: array
+      tags: ["MyBlogPosting"]
+
+    #  ----- Added lines  ----------------------------------------
+    post:
+      description: "Creates a new BlogPost"
+      operationId: postMyBlogPost
+      requestBody:
+        content:
+          application/json:
+            schema:
+               $ref: "#/components/schemas/MyBlogPosting"
+          application/xml:
+            schema:
+               $ref: "#/components/schemas/MyBlogPosting"
+      responses:
+        200:
+          description: ""
+          content:
+            application/json:
+              schema:
+                 $ref: "#/components/schemas/MyBlogPosting"
+            application/xml:
+              schema:
+                 $ref: "#/components/schemas/MyBlogPosting"
+      tags: ["MyBlogPosting"]
+    #  ---- /Added lines  ----------------------------------------
+  "/my-blog-posting/{myBlogPostingId}":
+    put:
+      operationId: updateMyBlogPosting
+      parameters: 
+      - in: path
+        name: "myBlogPostingId"
+        schema:
+          format: int64
+          type: integer
+        required: true
+      requestBody:
+        content:
+          application/json:
+            schema:
+               $ref: "#/components/schemas/MyBlogPosting"
+          application/xml:
+            schema:
+               $ref: "#/components/schemas/MyBlogPosting"
+      responses:
+        200:
+          description: ""
+          content:
+            application/json:
+              schema:
+                 $ref: "#/components/schemas/MyBlogPosting"
+            application/xml:
+              schema:
+                 $ref: "#/components/schemas/MyBlogPosting"
+      tags: ["MyBlogPosting"]
+       
+    delete:
+      operationId: deleteMyBlogPosting
+      parameters: 
+      - in: path
+        name: "myBlogPostingId"
+        schema: 
+          format: int64
+          type: integer
+        required: true
+      responses: 
+        204: 
+          description: "success"
+          content: 
+            application/json: {}
+            application/xml: {}
+      tags: ["MyBlogPosting"]
+                
+    get:
+      description: "Gets a list of BlogPost"
+      operationId: getMyBlogPost
+      parameters: 
+      - in: path
+        name: "myBlogPostingId"
+        schema: 
+          format: int64
+          type: integer
+        required: true
+      responses:
+        200:
+          description: ""
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: "#/components/schemas/MyBlogPosting"
+            application/xml:
+              schema:
+                items:
+                  $ref: "#/components/schemas/MyBlogPosting"
+      tags: ["MyBlogPosting"]
+                
+      

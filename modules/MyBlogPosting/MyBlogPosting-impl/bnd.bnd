@@ -1,0 +1,3 @@
+Bundle-Name: MyBlogPosting-impl
+Bundle-SymbolicName: com.liferay.headless.myBlogPosting.impl
+Bundle-Version: 1.0.0
