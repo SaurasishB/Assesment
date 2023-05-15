@@ -1,0 +1,4 @@
+Bundle-Name: Scheduler
+Bundle-SymbolicName: com.liferay.scheduler
+Bundle-Version: 1.0.0
+Export-Package: com.liferay.scheduler.constants

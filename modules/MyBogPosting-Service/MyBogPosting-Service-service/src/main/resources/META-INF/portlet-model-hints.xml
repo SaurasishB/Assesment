@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.liferay.service.myBlogPosting.model.MyBolgPosting">
+		<field name="uuid" type="String" />
+		<field name="myBlogPostingId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="heading" type="String" />
+		<field name="description" type="String" />
+	</model>
+</model-hints>

@@ -1,0 +1,10 @@
+Bundle-Name: MyBogPosting-Service-api
+Bundle-SymbolicName: com.liferay.service.myBlogPosting.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.liferay.service.myBlogPosting.exception,\
+	com.liferay.service.myBlogPosting.model,\
+	com.liferay.service.myBlogPosting.service,\
+	com.liferay.service.myBlogPosting.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../MyBogPosting-Service-service/service.xml
